@@ -1,36 +1,69 @@
-body {
+.header {
     display: flex;
     justify-content: center;
-    margin-top: 100px;
-    }
-
-.calculator {
-    height: 600px;
-    width: 500px;
-    border: 5px solid black;
+    color: rosybrown;
 }
 
-.calculatorScreen {
-    height:66px;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    padding:20px;
-    border: 2px solid blue;
+body {
+    background-color: aqua;
 }
 
 .buttons {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-template-rows: repeat(5, 100px);
-
-}
-#button {
-    height: 50px;
-    width: 50px;
-    background-color: green;
+    grid-template-columns: auto auto auto auto;
+    width: 250px;
+    height: 250px;
 }
 
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.calculatorScreen {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: gray;
+    height:40px;
+    font-size: xx-large;
+}
+
+
+/*CALCULATOR COLORING*/
+.num {
+    background-color: orange;
+}
+.divide {
+    background-color: purple;
+}
+.multiply {
+    background-color: purple;
+}
+.subtract {
+    background-color: purple;
+}
+.add {
+    background-color: purple;
+}
+.decimal {
+    background-color: lightgreen;
+}
+.equals {
+    background-color: lightgreen;
+}
+.smile {
+    background-color: lightgreen;
+}
+.reset {
+background-color: lightblue;
+}
+.posNeg {
+    background-color: lightblue;
+
+}
+.idk {
+    background-color: lightblue;
+}
