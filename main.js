@@ -1,17 +1,45 @@
-let output = 0; //current screen value
+let output = document.getElementById("screen");
+let firstNum = 0;
+let secondNum = 0;
+let total;
+let operand = false;
 
-function add (a, b) {
-    output = a + b;
+const resetCalc = document.getElementById("buttonAC");
+    resetCalc.addEventListener('click', reset);
+const seven = document.getElementById("button7");
+    seven.addEventListener('click', choseSeven);
+const eight = document.getElementById("button8");
+    eight.addEventListener('click', choseEight);
+const divide = document.getElementById("buttonDivide");
+    divide.addEventListener('click', division);
+
+//calculations//////////
+function reset () {
+    output.textContent = 0;
+    firstNum = 0;
+    secondNum = 0;
+    operand = false;
 }
 
-function subtract (a, b) {
-    output = a - b;
+function division () {
+     return operand = true;
+     }
+//calculations end//////////
+
+function choseSeven () {
+    if(!operand) {
+        output.textContent = firstNum + 7;
+        firstNum = output.textContent;
+    }
 }
 
-function multiply (a, b) {
-    output = a * b;
-}
-
-function divide (a, b) {
-    output = a / b;
+function choseEight () {
+    if(operand) {
+        output.textContent = secondNum + 8;
+        secondNum = output.textContent;
+    }
+    else {
+        output.textContent = firstNum + 8;
+        firstNum = output.textContent;
+    }
 }
