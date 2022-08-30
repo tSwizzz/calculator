@@ -1,7 +1,7 @@
 .header {
     display: flex;
     justify-content: center;
-    color: rosybrown;
+    color: red;
 }
 
 body {
@@ -13,8 +13,8 @@ body {
     grid-template-columns: auto auto auto auto;
     width: 250px;
     height: 250px;
+    border: 1px solid brown;
 }
-
 
 .container {
     display: flex;
@@ -29,11 +29,19 @@ body {
     background-color: gray;
     height:40px;
     font-size: xx-large;
+    border: 3px solid black;
+}
+
+.footer {
+    display: flex;
+    margin-top: 450px;
+    color: red;
+    
 }
 
 
 /*CALCULATOR COLORING*/
-.num {
+.num{
     background-color: orange;
 }
 .divide {
