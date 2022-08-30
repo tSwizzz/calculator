@@ -31,15 +31,19 @@ function choseSeven () {
         output.textContent = firstNum + 7;
         firstNum = output.textContent;
     }
+    else {
+        output.textContent = secondNum + 7;
+        secondNum = output.textContent;
+    }
 }
 
 function choseEight () {
-    if(operand) {
-        output.textContent = secondNum + 8;
-        secondNum = output.textContent;
-    }
-    else {
+    if(!operand) {
         output.textContent = firstNum + 8;
         firstNum = output.textContent;
+    }
+    else {
+        output.textContent = secondNum + 8;
+        secondNum = output.textContent;
     }
 }
